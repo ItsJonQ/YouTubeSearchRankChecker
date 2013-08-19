@@ -1,0 +1,117 @@
+/*============================================================================
+	Class: Helpers
+  ============================================================================*/
+.icon {
+	display: inline-block;
+	font-size: 21px;
+	padding: 8px;
+	text-align: center;
+}
+
+/*============================================================================
+	Structure: Body
+  ============================================================================*/
+
+#body-container {
+	bottom: 0;
+	left: 0;
+	min-width: 768px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/*============================================================================
+	Structure: Masthead
+  ============================================================================*/
+
+#masthead {
+	background: #f5f5f5;
+	left: 0;
+	margin: 0 auto 20px;
+	padding: 10px;
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: 999999;
+}
+
+#masthead #logo {
+	background-size: auto;
+	background: no-repeat url(../images/youtube-sprite.webp) -131px -219px;
+	float: left;
+	height: 30px;
+	width: 72px;
+	margin: 0px 20px 0 0;
+}
+
+#masthead #logo-text {
+	float: left;
+}
+
+#masthead #logo-text h5 {
+	line-height: 1;
+	margin: 0;
+	padding: 8px 0;
+}
+
+/*============================================================================
+	Structure: Search
+  ============================================================================*/
+
+#search-input input {
+	margin-right: 10px;
+}
+
+#search-input #search-query {
+	width: 40%;
+}
+
+#search-input input[type="text"] {
+	padding: 8px 12px;
+}
+
+/*============================================================================
+	Structure: Results
+  ============================================================================*/
+
+ #results-list {
+ 	margin-top: 20px;
+ 	padding: 0;
+ }
+
+#results-list li {
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+#results-list li.highlighted {
+	background: #FFFAE0;
+}
+
+#results-list .thumbnail {
+ 	width: 90px;
+ 	height: 50px;
+ 	float: left;
+ 	margin: 0px 20px 0 0;
+ 	overflow: hidden;
+}
+
+#results-list .content {
+	overflow: hidden;
+}
+
+#results-list .thumbnail img {
+  	margin-top: -9px;
+}
+
+
+@media (max-width: 767px) {
+	#search-input input,
+	#search-input #search-query {
+		float: none;
+		margin: 0 0 10px;
+		width: 90%;
+	}
+}
