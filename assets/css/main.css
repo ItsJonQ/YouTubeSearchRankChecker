@@ -37,8 +37,6 @@
 }
 
 #masthead #logo {
-	background-size: auto;
-	background: no-repeat url(../images/youtube-sprite.webp) -131px -219px;
 	float: left;
 	height: 30px;
 	width: 72px;
