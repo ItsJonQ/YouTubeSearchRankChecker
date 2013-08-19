@@ -25,7 +25,7 @@ jQuery.noConflict();
 		$('#search-input').submit(function(e){
 			e.preventDefault();
 			var i = $('#search-query').val();
-			var u = $('#search-user').val();
+			var u = $('#search-user').val().toLowerCase();
 			searchQuery(i, u);
 		});
 
