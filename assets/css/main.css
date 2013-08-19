@@ -106,10 +106,18 @@
 
 
 @media (max-width: 767px) {
+	#masthead {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
 	#search-input input,
 	#search-input #search-query {
 		float: none;
 		margin: 0 0 10px;
 		width: 90%;
+	}
+	#search-input #search-submit {
+		width: 100%;
 	}
 }
