@@ -42,7 +42,7 @@ jQuery.noConflict();
 					var date = new Date(data.published.$t);
 					var description = data.media$group.media$description.$t;
 					var thumb = data.media$group.media$thumbnail[0].url;
-					$('#results-list').append('<li data-video-id="'+id+'" class="user-'+user+'"><div class="thumbnail"><img src="'+thumb+'" width="120" height="90"></div><div class="content clearfix"><div class="video-title"><strong">'+title+'</strong></div><div class="text-light">by <span id="username-'+user+'">'+user+'</span> - '+formatDate(date)+'</div></div></li>');
+					$('#results-list').append('<li data-video-id="'+id+'" class="user-'+user.toLowerCase()+'"><div class="thumbnail"><img src="'+thumb+'" width="120" height="90"></div><div class="content clearfix"><div class="video-title"><strong">'+title+'</strong></div><div class="text-light">by <span id="username-'+user+'">'+user+'</span> - '+formatDate(date)+'</div></div></li>');
 				});
 				
 				var searchRank = function() {
